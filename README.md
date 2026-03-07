@@ -1,0 +1,1 @@
+# recolecta-widget-v2
