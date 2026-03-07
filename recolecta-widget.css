@@ -1,0 +1,10 @@
+
+.platica-recolecta-widget{font-family:Montserrat,Arial;margin:40px 0}
+.platica-recolecta-widget__inner{background-image:url("https://recolecta.fecyt.es/sites/default/files/2023-04/background-recolecta.jpg");background-size:cover;border-radius:16px;overflow:hidden}
+.platica-recolecta-widget__content{padding:40px;color:#fff}
+.platica-recolecta-widget__title{font-size:34px;margin:0 0 10px}
+.platica-recolecta-widget__intro{color:#85c6ff;margin-bottom:25px}
+.platica-recolecta-widget__searchbar{display:grid;grid-template-columns:2fr 1fr auto;gap:12px;background:rgba(255,255,255,.15);padding:16px;border-radius:12px}
+.platica-recolecta-widget__field{display:flex;flex-direction:column}
+.platica-recolecta-widget__field input,.platica-recolecta-widget__field select{height:48px;border-radius:8px;border:0;padding:0 12px}
+.platica-recolecta-widget__button{height:48px;padding:0 20px;border-radius:8px;border:0;background:#fff;color:#005ea8;font-weight:700;cursor:pointer}
