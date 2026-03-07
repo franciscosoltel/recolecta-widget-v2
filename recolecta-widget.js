@@ -43,6 +43,7 @@
     <div class="platica-recolecta-widget">
       <div class="platica-recolecta-widget__inner">
         <div class="platica-recolecta-widget__content">
+          <p class="mb-2"><a href="http://www.ciencia.gob.es/" rel="noopener" target="_blank"><img alt="Ministerio de Ciencia" src="https://www.fecyt.es/sites/all/themes/custom/fecyt/images/logo-ministerio.svg"></a><a href="http://www.fecyt.es/" rel="noopener" target="_blank" style="position: relative;right: 3px;"> <img alt="FECYT" src="https://www.fecyt.es/sites/all/themes/custom/fecyt/images/logo-fecyt.svg"></a><a href="https://recolecta.fecyt.es/" rel="noopener" target="_blank" style="position: relative;right: 3px;"><img alt="RECOLECTA" src="https://recolecta.fecyt.es/sites/default/files/images/logo.svg"></a></p>
           <p class="platica-recolecta-widget__eyebrow">BUSCADOR RECOLECTA</p>
           <h3 class="platica-recolecta-widget__title">Resultados de investigación</h3>
           <p class="platica-recolecta-widget__intro">
