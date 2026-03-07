@@ -40,40 +40,45 @@
     if (!container) return;
 
     container.innerHTML = `
-    <div class="platica-recolecta-widget">
-      <div class="platica-recolecta-widget__inner">
-        <div class="platica-recolecta-widget__content">
+<div class="wrap">
+    <div id="recolecta-widget-mount">
+      <div class="platica-recolecta-widget" role="search" aria-label="Buscador de publicaciones en acceso abierto">
+        <div class="platica-recolecta-widget__inner">
+          <div class="platica-recolecta-widget__content">
           <p class="mb-2"><a href="http://www.ciencia.gob.es/" rel="noopener" target="_blank"><img alt="Ministerio de Ciencia" src="https://www.fecyt.es/sites/all/themes/custom/fecyt/images/logo-ministerio.svg"></a><a href="http://www.fecyt.es/" rel="noopener" target="_blank" style="position: relative;right: 3px;"> <img alt="FECYT" src="https://www.fecyt.es/sites/all/themes/custom/fecyt/images/logo-fecyt.svg"></a><a href="https://recolecta.fecyt.es/" rel="noopener" target="_blank" style="position: relative;right: 3px;"><img alt="RECOLECTA" src="https://recolecta.fecyt.es/sites/default/files/images/logo.svg"></a></p>
-          <p class="platica-recolecta-widget__eyebrow">BUSCADOR RECOLECTA</p>
-          <h3 class="platica-recolecta-widget__title">Resultados de investigación</h3>
-          <p class="platica-recolecta-widget__intro">
-            Busca publicaciones en acceso abierto y accede al buscador de RECOLECTA con los filtros ya aplicados.
-          </p>
-
-          <form id="recolectaForm" class="platica-recolecta-widget__form">
-            <div class="platica-recolecta-widget__searchbar">
-
-              <div class="platica-recolecta-widget__field">
-                <label>Búsqueda por texto completo</label>
-                <input id="recolectaQuery" placeholder="Título, autor, palabras clave...">
+            <p class="platica-recolecta-widget__eyebrow">BUSCADOR RECOLECTA</p>
+            <h3 class="platica-recolecta-widget__title">Resultados de investigación</h3>
+            <p class="platica-recolecta-widget__intro">
+              Busca publicaciones en acceso abierto y accede al buscador de RECOLECTA con los filtros ya aplicados.
+            </p>
+            <form id="platicaRecolectaForm" class="platica-recolecta-widget__form">
+              <div class="platica-recolecta-widget__searchbar">
+                <div class="platica-recolecta-widget__field platica-recolecta-widget__field--search">
+                  <label for="recolectaQuery">Búsqueda por texto completo</label>
+                  <input type="text" id="recolectaQuery" name="search_api_fulltext" placeholder="Título, autor, palabras clave..." autocomplete="off">
+                </div>
+                <div class="platica-recolecta-widget__field platica-recolecta-widget__field--select">
+                  <label for="recolectaType">Tipo de documento</label>
+                  <select id="recolectaType" name="subject_facet" data-initialized="true">
+                    <option value="">Todos los tipos</option>
+                  <option value="Artículo científico (JournalArticle)">Artículo científico</option><option value="Proyecto fin de carrera (BachelorThesis)">Proyecto fin de carrera</option><option value="Otros (Other)">Otros</option><option value="Contribución de congreso (ConferenceOutput)">Contribución de congreso</option><option value="Tesis doctoral (DoctoralThesis)">Tesis doctoral</option><option value="Tesis de maestría (MasterThesis)">Tesis de maestría</option><option value="Capítulo o parte de un libro (BookPart)">Capítulo o parte de un libro</option><option value="Libro o Monografía (Book)">Libro o monografía</option><option value="Reseña (Review)">Reseña</option><option value="Artículo preliminar (WorkingPaper)">Artículo preliminar</option><option value="Set de datos (Dataset)">Set de datos</option><option value="Artículo de prensa (NewspaperArticle)">Artículo de prensa</option><option value="Conferencia académica (Lecture)">Conferencia académica</option><option value="Imagen (Image)">Imagen</option><option value="Estudio, informe, memoria (Report)">Estudio, informe, memoria</option><option value="Artículo científico antes de ser publicado, versión del autor (Preprint)">Preprint</option><option value="Artículo de revisión (ReviewArticle)">Artículo de revisión</option><option value="Patente (Patent)">Patente</option><option value="Artículo de revisión, evaluación de un libro o artículo (BookReview)">Artículo de revisión de libro o artículo</option><option value="Carta al director (LetterToTheEditor)">Carta al director</option><option value="Informe científico (ResearchReport)">Informe científico</option><option value="Software (Software)">Software</option><option value="Sonido (Sound)">Sonido</option><option value="Publicaciones de conferencias: comunicaciones, ponencias, pósters, etc (conferenceObject)">Publicaciones de conferencias</option><option value="Plan de Gestión de Datos (DataManagementPlan)">Plan de Gestión de Datos</option><option value="Recurso interactivo (InteractiveResource)">Recurso interactivo</option><option value="Artículo de software (SoftwarePaper)">Artículo de software</option><option value="Propuesta de investigación (ResearchProposal)">Propuesta de investigación</option><option value="Obra artística (ArtisticWork)">Obra artística</option><option value="Nota a un texto de jurisprudencia (annotation)">Nota a un texto de jurisprudencia</option></select>
+                </div>
+                <div class="platica-recolecta-widget__actions">
+                  <button type="submit" class="platica-recolecta-widget__button">Buscar</button>
+                </div>
               </div>
-
-              <div class="platica-recolecta-widget__field">
-                <label>Tipo de documento</label>
-                <select id="recolectaType">
-                  <option value="">Todos los tipos</option>
-                </select>
+              <div class="platica-recolecta-widget__footer">
+                <div class="platica-recolecta-widget__fixed-filters">
+                  <span class="platica-recolecta-widget__chip">Acceso abierto</span>
+                  <span class="platica-recolecta-widget__chip">Publicaciones</span>
+                </div>
               </div>
-
-              <div class="platica-recolecta-widget__actions">
-                <button class="platica-recolecta-widget__button">Buscar</button>
-              </div>
-
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
+  </div>
     `;
 
     var select = document.getElementById("recolectaType");
