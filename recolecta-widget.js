@@ -128,6 +128,10 @@
       params.set("search_api_fulltext", query);
       params.set("rights[1]", "1");
       params.set("document-type-no[1]", "");
+      params.set("repositoryname", "");
+      params.set("document-type", "");
+      params.set("document-type-no", "");
+      params.set("identifier_1", "");
 
       if (type) {
         params.append("f[0]", "subject_facet:" + type);
