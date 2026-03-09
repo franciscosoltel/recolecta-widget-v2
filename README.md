@@ -30,11 +30,11 @@ Al realizar la búsqueda se abre el buscador de RECOLECTA con estos filtros:
 Añade el siguiente código en la página donde quieras mostrar el widget.
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.2/recolecta-widget.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.3/recolecta-widget.css">
 
 <div data-recolecta-widget></div>
 
-<script src="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.2/recolecta-widget.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.3/recolecta-widget.js"></script>
 ```
 
 Cuando se cargue la página aparecerá automáticamente el buscador.
@@ -50,7 +50,7 @@ Esto permite adaptar el widget a distintos portales sin modificar el código Jav
 ## Ejemplo completo
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.2/recolecta-widget.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.3/recolecta-widget.css">
 
 <div
 data-recolecta-widget
@@ -64,7 +64,7 @@ data-chip-2="Publicaciones"
 data-new-tab="true"
 ></div>
 
-<script src="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.2/recolecta-widget.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.3/recolecta-widget.js"></script>
 ```
 
 ---
@@ -95,11 +95,11 @@ data-new-tab="true"
 3. Pega el siguiente código:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.2/recolecta-widget.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.3/recolecta-widget.css">
 
 <div data-recolecta-widget></div>
 
-<script src="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.2/recolecta-widget.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.3/recolecta-widget.js"></script>
 ```
 
 4. Guarda la página.
@@ -122,8 +122,8 @@ Contenido de la página:
 En la plantilla del portal:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.2/recolecta-widget.css">
-<script src="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.2/recolecta-widget.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.3/recolecta-widget.css">
+<script src="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.3/recolecta-widget.js"></script>
 ```
 
 ---
@@ -143,8 +143,8 @@ En el contenido de la página:
 Y cargar CSS y JS desde el tema o plantilla:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.2/recolecta-widget.css">
-<script src="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.2/recolecta-widget.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.3/recolecta-widget.css">
+<script src="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.3/recolecta-widget.js"></script>
 ```
 
 ---
@@ -157,11 +157,11 @@ Y cargar CSS y JS desde el tema o plantilla:
 2. Pegar el código:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.2/recolecta-widget.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.3/recolecta-widget.css">
 
 <div data-recolecta-widget></div>
 
-<script src="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.2/recolecta-widget.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.3/recolecta-widget.js"></script>
 ```
 
 3. Guardar o actualizar la página.
@@ -173,11 +173,11 @@ Y cargar CSS y JS desde el tema o plantilla:
 Si el sistema permite insertar HTML con scripts externos, basta con:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.2/recolecta-widget.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.3/recolecta-widget.css">
 
 <div data-recolecta-widget></div>
 
-<script src="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.2/recolecta-widget.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.3/recolecta-widget.js"></script>
 ```
 
 ---
@@ -189,7 +189,7 @@ Se recomienda utilizar **versiones con tag** para evitar cambios inesperados en 
 Ejemplo:
 
 ```html
-https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.2/recolecta-widget.js
+https://cdn.jsdelivr.net/gh/franciscosoltel/recolecta-widget-v2@1.3/recolecta-widget.js
 ```
 
 Cuando se publique una nueva versión:
